@@ -28,7 +28,7 @@ body {
 }
 
 .links a:hover {
-  color: #ed5858;
+  color: #5264AE;
   text-decoration: underline;
   transition: 0.5s;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .navbar .logo:hover {
-  color: #ed5858;
+  color: #5264AE;
   text-decoration: underline;
   transition: 0.5s;
 }
@@ -439,13 +439,90 @@ form{
   font-size: 1.2em;
   position: relative;
   cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
   transition: color 0.3s ease-in-out;
 }
 
 .footer .links a:hover {
-  color: #ed5858;
+  color: #5264AE;
   text-decoration: underline;
   transition: 0.5s;
+}
+
+.home-heading{
+  padding-top: 70px;
+  padding-left: 70px;
+}
+.home-heading h3{
+  color: #5264AE;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+.home-heading h1{
+  color: #ffffff;
+  font-size: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 400;
+}
+.home-heading h2{
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.home-heading h5{
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-skills{
+  margin-right: 35px;
+  margin-left: 35px;
+  background: #141313;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 35px;
+}
+.main-skills h1{
+  /* margin: 35px; */
+  color: #5264AE;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.skills{
+  display: flex;
+  flex-direction: row;
+}
+.skills-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: start;
+  text-align: start;
+  margin-left: 50px;
+}
+
+.skills-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-right: 50px;
+}
+
+.skills .vertical-line {
+  height:  100%;
+  border-left: 2px solid #ffffff; /* Set the color and thickness of the line */
+  padding: 0;
+  margin-top: 0;
+  transition: all 0.5s ease-in-out;
 }
