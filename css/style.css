@@ -505,7 +505,7 @@ form{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.main-skills, .main-about{
+.main-skills, .main-about, .main-achievements{
   margin-right: 35px;
   margin-left: 35px;
   background: #141313;
@@ -513,7 +513,7 @@ form{
   overflow: hidden;
   padding: 35px;
 }
-.main-skills h1{
+.main-skills h1, .main-achievements h1{
   /* margin: 35px; */
   color: #5264AE;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -837,4 +837,22 @@ color: #5264AE;
 
 .box-text h1{
   color: #5264AE;
+}
+
+.achievements-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.achievements-content{
+  height: 350px;
+  background-color: #5264ae6c;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px 10px;
+  box-shadow: rgba(100, 100, 111, 0.789) 5px ;
 }
