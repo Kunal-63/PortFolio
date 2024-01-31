@@ -641,3 +641,200 @@ form{
   transform: translateY(0%);
  }
 }
+
+#roadmap{
+  margin-top:50px;
+  padding-top:30px;
+  padding-bottom:30px;
+  /* background-image: url(./images/roadmap-bg.6315bf9c25a56442deb5cb48ac845dfb\ \(1\).svg); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* #ee683c */
+/* #fbb426 */
+
+/* timeline */
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #5264AE;
+  box-shadow: #5264AE 0px 2px 18px 0px;
+}
+ 
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #5264AE;
+  border-radius: 10px;
+  box-shadow: #5264AE 0px 2px 18px 0px;
+}
+ 
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #5264AE;
+}
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+.in-view{
+    color:black;
+    font-weight:400;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #5264AE;
+}
+.timeline ul li::after {
+  background: #5264AE;
+  transition: all .5s ease-in-out;
+}
+ 
+.timeline ul li.in-view::after {
+  background: #5264AE;
+}
+ 
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+ 
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px,0,0);
+}
+ 
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px,0,0);
+}
+ 
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+.roadmap-h1{
+  font-size:50px;
+  font-family:"Poppins", sans-serif;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text; */
+  font-family:"Poppins",sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  font-weight:600;
+}
+.roadmap-p{
+  color:white;
+  text-align:center;
+  margin-top:20px;
+  font-size:20px;
+}
+time{
+  font-size:24px;
+  font-family:"Poppins", sans-serif;
+  color: white;
+  font-weight: 600;
+  text-align:center;
+  padding-left:10px;
+}
+.in-view{
+  color:black;
+  border-radius:10px;
+}
+.in-view p{
+  margin-top:10px;
+  color:black;
+  padding-left:10px;
+  padding-right:10px;
+}
+.fa-circle{
+  color:black;
+  font-size:10px;
+  margin-right:5px;
+}
+.tech-h1{
+text-align: center;
+font-weight: 600;
+color: #5264AE;
+}
+
+
+.main-projects{
+  margin-right: 35px;
+  margin-left: 35px;
+  /* background: #141313; */
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5264AE;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-projects .odd-box{
+  background-color: #14131300;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 35px;
+  border-radius: 35px;
+  padding-left: 100px;
+
+}
+
+.main-projects .even-box{
+  background-color: #14131300;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 35px;
+  border-radius: 35px;
+  padding-right: 100px;
+}
+
+
+.box-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.box-text h1{
+  color: #5264AE;
+}
