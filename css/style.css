@@ -5,6 +5,19 @@ body {
   background: #0a0a0a;
   overflow-x: hidden;
 }
+#home{
+  height: 100vh;
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  align-self: center;
+}
+
+
+section{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .navbar {
   background-color: #0a0a0a;
@@ -103,8 +116,8 @@ body {
   height: 120px;
   border-radius: 50%;
   border: 1px solid #ffffff;
-  padding: 5px;
-  background-color: #ffffff;
+  /* padding: 5px; */
+  background-color: #5264AE;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -449,9 +462,19 @@ form{
   text-decoration: underline;
   transition: 0.5s;
 }
+.home-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-right: 0;
+  transition: all 0.5s ease-in-out;
+}
 
 .home-heading{
-  padding-top: 70px;
+  padding-top: 150px;
   padding-left: 70px;
 }
 .home-heading h3{
@@ -482,7 +505,7 @@ form{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.main-skills{
+.main-skills, .main-about{
   margin-right: 35px;
   margin-left: 35px;
   background: #141313;
@@ -503,21 +526,23 @@ form{
 .skills-column{
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   align-self: start;
   text-align: start;
-  margin-left: 50px;
+  margin-left: 0px;
+  width: 100%;
 }
 
 .skills-row{
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   color: white;
-  margin-right: 50px;
-}
+  margin: 30px;
+  margin-right: 70px;
+} 
 
 .skills .vertical-line {
   height:  100%;
@@ -525,4 +550,94 @@ form{
   padding: 0;
   margin-top: 0;
   transition: all 0.5s ease-in-out;
+}
+
+.main-about{
+  display: flex;
+  flex-direction: row;
+}
+
+.main-about h1{
+  /* margin: 35px; */
+  color: #5264AE;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-about .about-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: start;
+  text-align: start;
+  margin-top: 50px;
+  margin-left: 0px;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+}
+
+.download-button1 {
+ position: absolute;
+ border-width: 0;
+ color: white;
+ font-size: 15px;
+ font-weight: 600;
+ border-radius: 4px;
+ z-index: 1;
+}
+
+.download-button1 .docs1 {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 10px;
+ min-height: 40px;
+ padding: 0 10px;
+ border-radius: 4px;
+ z-index: 1;
+ background-color: #242a35;
+ border: solid 1px #e8e8e82d;
+ transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button1:hover {
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download1 {
+ position: absolute;
+ inset: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ max-width: 90%;
+ margin: 0 auto;
+ z-index: -1;
+ border-radius: 4px;
+ transform: translateY(0%);
+ background-color: #01e056;
+ border: solid 1px #01e0572d;
+ transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button1:hover .download1 {
+ transform: translateY(100%)
+}
+
+.download1 svg polyline,.download1 svg line {
+ animation: docs1 1s infinite;
+}
+
+@keyframes docs1 {
+ 0% {
+  transform: translateY(0%);
+ }
+
+ 50% {
+  transform: translateY(-15%);
+ }
+
+ 100% {
+  transform: translateY(0%);
+ }
 }
