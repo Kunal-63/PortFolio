@@ -19,40 +19,23 @@ section{
   padding-bottom: 30px;
 }
 
-.navbar {
+.my-nav{
   background-color: #0a0a0a;
-  padding: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
   /* display: inline-block; */
   width: 100%;
   /* position: fixed; */
-  z-index: 1;
 }
 
-.links a {
-  margin-right: 35px;
-  list-style: none;
-  text-decoration: none;
+
+.nav-link, .navbar-brand{
   color: #ffffff;
   font-size: 1.2em;
-  position: relative;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out;
+  font-weight: 400;
+  letter-spacing: 0px;
 }
 
-.links a:hover {
-  color: #5264AE;
-  text-decoration: underline;
-  transition: 0.5s;
-}
-
-
-.navbar .logo {
-  color: #ffffff;
-  font-size: 1.2em;
-}
-
-.navbar .logo:hover {
+.nav-link:hover, .navbar-brand:hover {
   color: #5264AE;
   text-decoration: underline;
   transition: 0.5s;
@@ -67,15 +50,6 @@ section{
   margin: 0 auto;
   width: 100%;
 }
-/* .bio {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  font-size: 1.2em;
-  font-weight: 600;
-  letter-spacing: 0px;
-  color: #ffffff;
-} */
 
 .card {
   margin: auto;
@@ -116,9 +90,16 @@ section{
   height: 120px;
   border-radius: 50%;
   border: 1px solid #ffffff;
-  /* padding: 5px; */
   background-color: #5264AE;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} 
+
+.aboutImg{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .icon {
@@ -462,21 +443,11 @@ form{
   text-decoration: underline;
   transition: 0.5s;
 }
-.home-image{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  margin-right: 0;
-  transition: all 0.5s ease-in-out;
+
+.home-text{
+  margin-top: 100px;
 }
 
-.home-heading{
-  padding-top: 150px;
-  padding-left: 70px;
-}
 .home-heading h3{
   color: #5264AE;
   font-size: 50px;
@@ -506,15 +477,13 @@ form{
 }
 
 .main-skills, .main-about, .main-achievements{
-  margin-right: 35px;
-  margin-left: 35px;
   background: #141313;
   border-radius: 30px;
   overflow: hidden;
   padding: 35px;
+  width: 100%;
 }
 .main-skills h1, .main-achievements h1{
-  /* margin: 35px; */
   color: #5264AE;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -855,4 +824,8 @@ color: #5264AE;
   flex-direction: column;
   padding: 5px 10px 10px;
   box-shadow: rgba(100, 100, 111, 0.789) 5px ;
+}
+
+#about, #home{
+  padding: 35px;
 }
