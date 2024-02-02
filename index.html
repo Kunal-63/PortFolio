@@ -16,39 +16,19 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">Preeti Harjani</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"
-          ><i
-            class="fa fa-2x fa-bars"
-            style="color: white; font-size: 18px"
-            aria-hidden="true"
-          ></i
-        ></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/resume">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="topnav" id="myTopnav">
+      <a href="www.kunaladwani.vercel.app" class="active"><img src="./icons/logo1.png" height="50" width="50"/></a>
+      
+      <a href="#news">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#roadmap" id="nav-exp">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
     <section id="home">
       <div class="container">
@@ -82,12 +62,19 @@
               them to solve real-life problems. I am currently into Web
               Development and working on my Data Structures and Algorithms.
             </p>
-            <button class="download-button">
-              <div class="docs1"><svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line y2="13" x2="8" y1="13" x1="16"></line><line y2="17" x2="8" y1="17" x1="16"></line><polyline points="10 9 9 9 8 9"></polyline></svg>Resume</div>
-              <div class="download1">
-                <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line y2="3" x2="12" y1="15" x1="12"></line></svg>
-              </div>
-            </button>
+            <div style="display: flex; flex-direction: row;">
+            <a href="" style="margin-right: 50px;">
+              <button class="button1" type="button">
+                <span class="button__text">Download</span>
+                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+              </button>
+            </a>
+            <a href="#contact">
+              <button class="contact-button"> Contact Me
+                <span></span>
+              </button>
+            </a>
+          </div>
           </div>
         </div>
       </div>
@@ -126,8 +113,8 @@
             </div>
             </a>
           </div>
-          <div class="col-md-8 col-sm-12 col-lg-8">
-            <h2>Project 1</h2>
+          <div class="col-md-8 col-sm-12 col-lg-8 even-projects">
+            <h2>Project2 </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               voluptatum, quibusdam, voluptate, quia quos voluptas quod
@@ -150,8 +137,35 @@
             </div>
             </a>
           </div>
-          <div class="col-md-4 col-sm-12 col-lg-4 projectDiv">
+          <div class="col-md-4 col-sm-12 col-lg-4 projectDiv even-projects">
             <img src="./images/coffee.png" alt="Kunal Adwani" />
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4 even-projects-lg">
+            <img src="./images/coffee.png" alt="Kunal Adwani" />
+          </div>
+          <div class="col-md-8 col-sm-12 col-lg-8 projectDiv even-projects-lg">
+            <h2>Project 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, voluptate, quia quos voluptas quod
+              voluptatem quas quibusdam, voluptate, quia quos voluptas quod
+              voluptatem quas
+            </p>
+            <a href="#"><div class="button-icon">
+              <div class="icon-github">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+                    fill="#222229"
+                  ></path>
+                </svg>
+              </div>
+              <div class="cube-github">
+                <span class="side front">hover me</span>
+                <span class="side top">check it on github</span>
+              </div>
+            </div>
+            </a>
           </div>
           <div class="col-md-4 col-sm-12 col-lg-4">
             <img src="./images/coffee.png" alt="Kunal Adwani" />
@@ -180,8 +194,8 @@
             </div>
             </a>
           </div>
-          <div class="col-md-8 col-sm-12 col-lg-8">
-            <h2>Project 1</h2>
+          <div class="col-md-8 col-sm-12 col-lg-8 even-projects">
+            <h2>Project 4</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               voluptatum, quibusdam, voluptate, quia quos voluptas quod
@@ -204,8 +218,35 @@
             </div>
             </a>
           </div>
-      <div class="col-md-4 col-sm-12 col-lg-4 projectDiv">
+      <div class="col-md-4 col-sm-12 col-lg-4 projectDiv even-projects">
         <img src="./images/coffee.png" alt="Kunal Adwani" />
+      </div>
+      <div class="col-md-4 col-sm-12 col-lg-4 even-projects-lg">
+        <img src="./images/coffee.png" alt="Kunal Adwani" />
+      </div>
+      <div class="col-md-8 col-sm-12 col-lg-8 projectDiv even-projects-lg">
+        <h2>Project 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quibusdam, voluptate, quia quos voluptas quod
+          voluptatem quas quibusdam, voluptate, quia quos voluptas quod
+          voluptatem quas
+        </p>
+        <a href="#"><div class="button-icon">
+          <div class="icon-github">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+                fill="#222229"
+              ></path>
+            </svg>
+          </div>
+          <div class="cube-github">
+            <span class="side front">hover me</span>
+            <span class="side top">check it on github</span>
+          </div>
+        </div>
+        </a>
       </div>
       
       <div class="col-md-4 col-sm-12 col-lg-4">
@@ -566,6 +607,18 @@
         </div>
       </div>
     </section>
+    
+<script>
+  function myFunction() {
+     document.getElementById("nav-exp").href = "#smallRoadmap";
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

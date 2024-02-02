@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
   background: #0a0a0a;
   overflow-x: hidden;
 }
@@ -19,27 +19,36 @@ section{
   padding-bottom: 30px;
 }
 
-.my-nav{
-  background-color: #0a0a0a;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
-  /* display: inline-block; */
-  width: 100%;
-  /* position: fixed; */
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: right;
+  display: inline;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  float: left;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
 }
 
 
-.nav-link, .navbar-brand{
-  color: #ffffff;
-  font-size: 1.2em;
-  font-weight: 400;
-  letter-spacing: 0px;
-}
-
-.nav-link:hover, .navbar-brand:hover {
-  color: #5264AE;
-  text-decoration: underline;
-  transition: 0.5s;
-}
 
 .footer {
   display: flex;
@@ -905,71 +914,123 @@ color: #5264AE;
   color: #fff;
   transform: translate3d(0, 0, 1em);
 }
-.download-button {
+
+ .contact-button {
+  border: none;
+  display: block;
   position: relative;
-  border-width: 0;
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 4px;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: #5264AE;
   z-index: 1;
- }
- 
- .download-button .docs1 {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.contact-button span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid royalblue;
+}
+
+.contact-button span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+.contact-button:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+}
+
+.contact-button:hover {
+  color: white;
+}
+
+.contact-button:active span::before {
+  background: #5264AE;
+}
+
+.button1 {
+  position: relative;
+  width: 170px;
+  height: 52px;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  min-height: 40px;
-  padding: 0 10px;
-  border-radius: 4px;
-  z-index: 1;
-  background-color: #242a35;
-  border: solid 1px #e8e8e82d;
-  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
- }
- 
- .download-button:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
- }
- 
- .download1 {
+  border: 1px solid #5264AE;
+  background-color: #5264AE;
+  overflow: hidden;
+  /* font-size: 18px; */
+}
+
+.button1, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button1 .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button1 .button__icon {
   position: absolute;
-  inset: 0;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #5264AE;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 90%;
-  margin: 0 auto;
-  z-index: -1;
-  border-radius: 4px;
-  transform: translateY(0%);
+}
+
+.button1 .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.button1:hover {
+  background: #5264AE;
+}
+
+.button1:hover .button__text {
+  color: transparent;
+}
+
+.button1:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button1:active .button__icon {
   background-color: #5264AE;
-  border: solid 1px #01e0572d;
-  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
- }
- 
- .download-button:hover .download1 {
-  transform: translateY(100%)
- }
- 
- .download1 svg polyline,.download1 svg line {
-  animation: docs 1s infinite;
- }
- 
- @keyframes docs {
-  0% {
-   transform: translateY(0%);
-  }
- 
-  50% {
-   transform: translateY(-15%);
-  }
- 
-  100% {
-   transform: translateY(0%);
-  }
- }
+}
+
+.button1:active {
+  border: 1px solid #5264AE;
+}
+.even-projects-lg{
+  display: none;
+}
 
 @media only screen and (max-width: 767px) {
   .centerCol{
@@ -1050,5 +1111,28 @@ color: #5264AE;
       margin-left: 0px;
       margin-right: 0px;
     }
+    .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .even-projects{
+    display: none;
+  }
+  .even-projects-lg{
+    display:flex;
+    flex-direction: column;
+  }
    
 }
