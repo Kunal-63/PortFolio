@@ -28,6 +28,6 @@ Clone the project
 
 
 
-## Screenshots
+## Sample Output
 ![App Screenshot](https://github.com/Kunal-63/PortFolio/blob/main/output.png)
 
