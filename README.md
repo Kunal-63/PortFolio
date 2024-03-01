@@ -30,4 +30,5 @@ Clone the project
 
 ## Sample Output
 ![App Screenshot](https://github.com/Kunal-63/PortFolio/blob/main/output.png)
+![App Screenshot](https://github.com/Kunal-63/PortFolio/blob/main/output1.png)
 
