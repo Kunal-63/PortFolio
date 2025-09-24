@@ -1,619 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="icon" href="./icons/logo1.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>
-    <div class="topnav" id="myTopnav">
-      <a href="https://kunaladwani.vercel.app/" class="active"><img src="./icons/logo1.png" height="50" width="50"/></a>
-      
-      <a href="#news">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#roadmap" id="nav-exp">Experience</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <meta name="description" content="Personal portfolio showcasing projects, experience, and contact information.">
 
-    <section id="home">
-      <div class="container">
-        <div class="row home-heading">
-          <div class="col-md-6 col-sm-12 col-lg-6 home-text" data-aos="fade-right">
-            <h3>Hi, I'm</h3>
-            <h1>Kunal Adwani</h1>
-            <h2>Full Stack Developer</h2>
-          </div>
-          <div class="col-md-6 col-sm-12 col-lg-6">
-            <img src="./images/banner.png" alt="Kunal Adwani" style="height: 100%; width: 100%;" data-aos="fade-left" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <section id="about">
-      <div class="container-fluid main-about">
-        <div class="row">
-          <div class="col-md-5 col-sm-12 col-lg-5">
-            <img src="./images/about.png" alt="Kunal Adwani" height="400" class="aboutImg" data-aos="zoom-in"/>
-          </div>
-          <div class="col-md-7 col-sm-12 col-lg-7" data-aos="fade-left">
-            <h1>About Me</h1>
-            <p align="justify">
-              I am a Full Stack Developer who enjoys learning and sharing my skills with others. I am a Computer Science student from Gujarat University. I have worked with several languages (front-end & back-end both). I enjoy discovering new technology and using it to tackle real-world problems. I am currently into AIML.
-            </p>
-            <div style="display: flex; flex-direction: row;">
-            <a href="https://drive.google.com/file/d/1n1Zf5wNcJXvdTdELANO2sX3LrlqmUJYc/view?usp=sharing" style="margin-right: 30px;">
-              <button class="button1" type="button">
-                <span class="button__text">Resume</span>
-                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
-              </button>
-            </a>
-            <a href="#contact">
-              <button class="contact-button"> Contact Me
-                <span></span>
-              </button>
-            </a>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <link rel="stylesheet" href="styles.css">
 
-    <section id="projects">
-      <div class="container main-projects">
-        <div class="row">
-          <h1>Projects</h1>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-left">
-            <img src="./images/project1.png" alt="Kunal Adwani" />
-          </div>
-          <div class="col-md-8 col-sm-12 col-lg-8 projectDiv" data-aos="fade-left">
-            <h2>School Administration Software</h2>
-            <p  align="justify">
-              On school management's request, the software to manage the office administration can help manage various functions like student fee collection and management, and student personal data management, the software can also be operated using voice communication.
-            </p>
-            <a href="https://github.com/Kunal-63/CodeWorked"><div class="button-icon">
-              <div class="icon-github">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
-                    fill="#222229"
-                  ></path>
-                </svg>
-              </div>
-              <div class="cube-github">
-                <span class="side front">Link!</span>
-                <span class="side top">check it on github</span>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-12 col-lg-8 even-projects" data-aos="fade-right">
-            <h2>Mobile Application for Activity Monitoring of Anyone through Social Media Platforms</h2>
-            <p align="justify">
-              Mobile app for activity monitoring of anyone through social media platforms, allows you to track and extract comprehensive data from anyone's online activities. Harnessing the power of models trained on large datasets, it provides users with a detailed analysis for a deeper understanding.
-            </p>
-            <a href="https://github.com/Kunal-63/Activity-Monitoring-Of-Any-Person"><div class="button-icon">
-              <div class="icon-github">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
-                    fill="#222229"
-                  ></path>
-                </svg>
-              </div>
-              <div class="cube-github">
-                <span class="side front">Link!</span>
-                <span class="side top">check it on github</span>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-12 col-lg-4 projectDiv even-projects" data-aos="fade-right">
-            <img src="./images/project2.png" alt="Kunal Adwani"/>
-          </div>
-          <div class="col-md-4 col-sm-12 col-lg-4 even-projects-lg" data-aos="fade-right">
-            <img src="./images/project2.png" alt="Kunal Adwani" />
-          </div>
-          <div class="col-md-8 col-sm-12 col-lg-8 projectDiv even-projects-lg" data-aos="fade-right">
-            <h2>Mobile Application for Activity Monitoring of Anyone through Social Media Platforms</h2>
-            <p align="justify">
-              Mobile app for activity monitoring of anyone through social media platforms, allows you to track and extract comprehensive data from anyone's online activities. Harnessing the power of models trained on large datasets, it provides users with a detailed analysis for a deeper understanding.
-            </p>
-            <a href="https://github.com/Kunal-63/Activity-Monitoring-Of-Any-Person"><div class="button-icon">
-              <div class="icon-github">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
-                    fill="#222229"
-                  ></path>
-                </svg>
-              </div>
-              <div class="cube-github">
-                <span class="side front">Link!</span>
-                <span class="side top">check it on github</span>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-12 col-lg-4 " data-aos="fade-left">
-            <img src="./images/project3.png" alt="Kunal Adwani" />
-          </div>
-          <div class="col-md-8 col-sm-12 col-lg-8 projectDiv" data-aos="fade-left">
-            <h2>Admission Form</h2>
-            <p align="justify">
-              The admission form facilitates a streamlined process for the admission committee by providing a user-friendly platform. Users can easily download PDF's of their transactions, while administrators can view and organize records based on their specific requirements. Additionally, the system enables efficient communication with parents through email or SMS to coordinate interviews and selection proccesses.
-            </p>
-            <a href="https://github.com/Kunal-63/ADMISSION-FORM"><div class="button-icon">
-              <div class="icon-github">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
-                    fill="#222229"
-                  ></path>
-                </svg>
-              </div>
-              <div class="cube-github">
-                <span class="side front">Link!</span>
-                <span class="side top">check it on github</span>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-12 col-lg-8 even-projects" data-aos="fade-right">
-            <h2>Air Traffic Control System</h2>
-            <p align="justify">
-              A software model of an air traffic control system to manage flights passing over a city airport. The system is designed to manage the flow of air traffic, ensuring the safety and efficiency of the airport. The system automatically send signals to pilots regarding takeoff and landing operations, also manages the height, speed and direction of the aircraft.
-            </p>
-            <a href="https://github.com/Kunal-63/ATC"><div class="button-icon">
-              <div class="icon-github">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
-                    fill="#222229"
-                  ></path>
-                </svg>
-              </div>
-              <div class="cube-github">
-                <span class="side front">Link!</span>
-                <span class="side top">check it on github</span>
-              </div>
-            </div>
-            </a>
-          </div>
-      <div class="col-md-4 col-sm-12 col-lg-4 projectDiv even-projects" data-aos="fade-right">
-        <img src="./images/project4.png" alt="Kunal Adwani" />
-      </div>
-      <div class="col-md-4 col-sm-12 col-lg-4 even-projects-lg" data-aos="fade-right">
-        <img src="./images/project4.png" alt="Kunal Adwani" />
-      </div>
-      <div class="col-md-8 col-sm-12 col-lg-8 projectDiv even-projects-lg" data-aos="fade-right">
-        <h2>Air Traffic Control System</h2>
-        <p align="justify">
-          A software model of an air traffic control system to manage flights passing over a city airport. The system is designed to manage the flow of air traffic, ensuring the safety and efficiency of the airport. The system automatically send signals to pilots regarding takeoff and landing operations, also manages the height, speed and direction of the aircraft.
-        </p>
-        <a href="https://github.com/Kunal-63/ATC"><div class="button-icon">
-          <div class="icon-github">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
-                fill="#222229"
-              ></path>
-            </svg>
-          </div>
-          <div class="cube-github">
-            <span class="side front">Link!</span>
-            <span class="side top">check it on github</span>
-          </div>
-        </div>
-        </a>
-      </div>
-      
-      <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-left">
-        <img src="./images/project5.png" alt="Kunal Adwani" />
-      </div>
-      <div class="col-md-8 col-sm-12 col-lg-8 projectDiv" data-aos="fade-left">
-        <h2>Library Management Software</h2>
-        <p align="justify"> 
-          A software model of a library management system to manage the flow of books and records. The system is designed to manage the flow of books, ensuring the safety and efficiency of the library. The system automatically sends signals to the librarian regarding the availability of books, also manages the flow of books.
-        </p>
-        <a href="https://github.com/Kunal-63/CodeWorked"><div class="button-icon">
-              <div class="icon-github">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
-                    fill="#222229"
-                  ></path>
-                </svg>
-              </div>
-              <div class="cube-github">
-                <span class="side front">Link!</span>
-                <span class="side top">check it on github</span>
-              </div>
-            </div>
-            </a>
-      </div>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💠</text></svg>">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="logo" aria-label="Go to home">MyPortfolio</a>
 
-    </div>
-    </section>
-
-    <section id="skills">
-      <div class="container-fluid main-skills">
-        <h1>Skills & Expertise</h1>
-        <div class="row">
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/python.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/c.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/html.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/css.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/js.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/flask.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/fastapi.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/flutter.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/mysql.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/dart.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/git.png" height="50" width="50" />
-          </div>
-          <div class="col-md-6 col-lg-3 col-sm-6 col-6 centerCol"  data-aos="flip-right">
-            <img src="./icons/github.png" height="50" width="50" />
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="roadmap" class="timeline" style="padding-bottom: 50px">
-      <!-- <h5 class="tech-h5" data-aos="zoom-in">ROADMAP</h5> -->
-      <h1 class="tech-h1" data-aos="zoom-in">Experience</h1>
-      <ul>
-        <li class="in-view">
-          <div data-aos="fade-right">
-            <time>Software Developer </time><br />
-            <p>
-              Sep'22 - Mar'23
-              <br />
-              Airport School Ahmedabad<br />
-            </p>
-          </div>
-        </li>
-        <li class="in-view">
-          <div data-aos="fade-right">
-            <time>Computer Science - PGT</time><br />
-            <p>
-              Jul'23 - Present<br />
-              Bright International School<br />
-            </p>
-          </div>
-        </li>
-        <li class="in-view">
-          <div data-aos="fade-right">
-            <time>Software Developer</time><br />
-            <p>
-              Jan'24 - Present<br />
-              Department of Computer Science<br />
-              Gujarat University
-            </p>
-          </div>
-        </li>
-      </ul>
-
-    </section>
-
-    <section id="smallRoadmap">
-      
-      <div class="container">
-        <h1 class="tech-h1" data-aos="zoom-in">Experience</h1>
-        <div class="row">
-          <div class="col-12 col-sm-12 col-xs-12">
-            <div data-aos="fade-right">
-              <h2>Software Developer </h2>
-              <p>
-                Sep'22 - Mar'23
-              <br />
-              Airport School Ahmedabad<br />
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-xs-12">
-            <div data-aos="fade-right">
-              <h2>Computer Science - PGT</h2>
-              <p>
-                Jul'23 - Present<br />
-                Bright International School<br />
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-xs-12">
-            <div data-aos="fade-right">
-              <h2>Software Developer</h2>
-              <p>
-                Jan'24 - Present<br />
-              Department of Computer Science<br />
-              Gujarat University
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="achievements">
-      <div class="main-achievements">
-        <h1>Achievements</h1>
-        <div class="achievements-section">
-          <div class="achievements-content" data-aos="fade-left">
-            <img src="./images/ach1.jpg" height="250" width="300" />
-            <p>
-              Winner at New India Vibrant Hack-A-Thon'23
-            </p>
-          </div>
-          <div class="achievements-content" data-aos="fade-left">
-            <img src="./images/ach2.jpg" height="250" width="300" />
-            <p>
-              Winner at SSIP Hack-A-Thon'22
-            </p>
-          </div>
-
-          <div class="achievements-content" data-aos="fade-left">
-            <img src="./images/ach3.jpg" height="250" width="300" />
-            <p>
-              Winner at Pitch Deck at EDI Ahmedabad'24
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="footer">
-        <div class="card" data-aos="flip-right">
-          <div class="background"></div>
-          <div class="logo">
-            <div class="center-wrapper">
-              <img
-                src="./icons/logo1.png"
-                height="180px"
-                width="180px"
-                alt="Kunal Adwani"
-              />
-              <div class="footer-card-text">Socials!!</div>
-            </div>
-          </div>
-          <a href="https://github.com/Kunal-63">
-            <div class="box box1">
-              <span class="icon"
-                ><svg
-                  viewBox="0 0 200 200"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="svg"
-                >
-                  <path
-                    d="M100 0C44.775 0 0 45.4761 0 101.566C0 149.158 32.2667 188.98 75.7667 200C75.3 198.629 75 197.038 75 195.066V177.706C70.9417 177.706 64.1417 177.706 62.4333 177.706C55.5917 177.706 49.5083 174.719 46.5583 169.166C43.2833 162.996 42.7167 153.559 34.6 147.787C32.1917 145.865 34.025 143.673 36.8 143.97C41.925 145.442 46.175 149.014 35.175 154.312C54.1583 159.619 56.0333 160.821 63.475 160.821C67.0833 160.821 72.4833 160.609 77.5667 159.797C80.3 152.747 85.025 146.255 90.8 143.191C57.5 139.712 41.6083 122.886 41.6083 100.042C41.6083 90.2074 45.7333 80.694 52.7417 72.6788C50.4417 64.7228 47.55 48.4977 53.625 42.3191C68.6083 42.3191 77.6667 52.1879 79.8417 54.854C87.3083 52.2556 95.5083 35.7829 104.125 35.7829C112.758 35.7829 120.992 52.2556 128.475 54.8709C130.625 52.2218 139.692 42.3191 154.708 42.3191C160.808 48.5061 157.883 64.799 155.558 72.738C162.525 80.7364 166.625 90.2243 166.625 100.042C166.625 122.869 150.758 139.687 117.508 143.182C126.658 148.032 133.333 161.659 133.333 171.926V195.066C133.333 195.946 133.142 196.581 133.042 197.334C172.008 183.462 200 145.882 200 101.566C200 45.4761 155.225 0 100 0Z"
-                    fill="white"
-                  />
-                </svg>
-              </span>
-            </div>
-          </a>
-          <a href="mailto:kunaladwani1456@gmail.com">
-            <div class="box box2">
-              <span class="icon">
-                <svg
-                  viewBox="0 0 200 200"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="svg"
-                >
-                  <g clip-path="url(#clip0_8_23)">
-                    <path
-                      d="M100 0C44.7713 0 0 44.7713 0 100C0 155.229 44.7713 200 100 200C155.229 200 200 155.229 200 100C200 44.7713 155.229 0 100 0ZM145.053 55.5556L99.963 91.2019L53.4065 55.5556H145.053ZM149.692 144.444H48.7657V70.6102L95.288 105.897C96.5352 106.851 98.3806 107.328 99.8685 107.328C101.392 107.328 102.714 106.828 103.975 105.831L149.692 69.4648V144.444Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_8_23">
-                      <rect width="200" height="200" fill="black" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span></div
-          ></a>
-          <a href="https://www.linkedin.com/in/kunaladwani">
-            <div class="box box3">
-              <span class="icon"
-                ><svg
-                  viewBox="0 0 217 206"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="white"
-                  class="svg"
-                >
-                  <path
-                    d="M169.26 34.3331H48.5537C46.9979 34.2639 45.443 34.4866 43.9779 34.9887C42.5129 35.4907 41.1666 36.2621 40.016 37.2586C38.8654 38.2552 37.9331 39.4575 37.2726 40.7965C36.6121 42.1356 36.2363 43.5851 36.1667 45.0622V159.907C36.2578 162.998 37.5922 165.94 39.8957 168.126C42.1993 170.313 45.2973 171.58 48.5537 171.667H169.26C172.425 171.533 175.41 170.226 177.574 168.028C179.737 165.83 180.907 162.915 180.833 159.907V45.0622C180.86 43.6245 180.576 42.197 180 40.8671C179.424 39.5373 178.567 38.3332 177.483 37.3285C176.4 36.3239 175.112 35.5401 173.698 35.025C172.284 34.5099 170.774 34.2744 169.26 34.3331ZM81.375 148.835H60.3079V87.6358H81.375V148.835ZM71.3387 78.3656C69.8687 78.4142 68.4038 78.1737 67.0363 77.6592C65.6688 77.1448 64.4281 76.3674 63.3923 75.3759C62.3564 74.3845 61.5476 73.2004 61.0169 71.898C60.486 70.5957 60.2447 69.2032 60.3079 67.8081C60.2429 66.3978 60.4891 64.9903 61.0308 63.6758C61.5725 62.3612 62.3976 61.1686 63.4532 60.1746C64.5089 59.1804 65.7718 58.4068 67.1609 57.9033C68.55 57.3997 70.0347 57.1774 71.5196 57.2506C72.9897 57.202 74.4545 57.4424 75.822 57.9569C77.1895 58.4714 78.4302 59.2488 79.466 60.2402C80.5019 61.2317 81.3107 62.4158 81.8414 63.7181C82.3723 65.0205 82.6136 66.4129 82.5504 67.8081C82.6154 69.2183 82.3692 70.6258 81.8275 71.9403C81.2858 73.255 80.4607 74.4475 79.4051 75.4416C78.3494 76.4357 77.0865 77.2093 75.6975 77.7128C74.3083 78.2164 72.8236 78.4387 71.3387 78.3656ZM156.782 148.835H135.625V115.36C135.625 107.377 132.641 101.884 125.137 101.884C122.806 101.903 120.537 102.606 118.644 103.897C116.75 105.188 115.323 107.003 114.558 109.094C113.97 110.661 113.724 112.326 113.835 113.987V148.835H93.0387V87.6358H113.835V96.2192C115.684 92.9944 118.435 90.3181 121.786 88.4847C125.137 86.6522 128.956 85.7345 132.822 85.8331C146.475 85.8331 156.782 94.4167 156.782 112.699V148.835Z"
-                    fill="white"
-                  />
-                </svg>
-              </span></div
-          ></a>
-        </div>
-
-        <div class="footer-form" data-aos="fade-left">
-          <form action="https://docs.google.com/forms/d/e/1FAIpQLSf7Ow_17lOiOiaTEYvzlaIOk2a-K-4yYj7S0xBdw-Jj76DS1Q/formResponse" method="post">
-            <div class="group">
-              <input required="" name="entry.2101639944" type="text" class="input" />
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Name</label>
-            </div>
-            <div class="group">
-              <input required="" name="entry.746347328" type="email" class="input" />
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Email</label>
-            </div>
-            <div class="group">
-              <input required="" name="entry.187138528" type="text" class="input" />
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Message</label>
-            </div>
-
-            <button type="submit">
-              <span class="circle1"></span>
-              <span class="circle2"></span>
-              <span class="circle3"></span>
-              <span class="circle4"></span>
-              <span class="circle5"></span>
-              <span class="text">Contact Me</span>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
-          </form>
-        </div>
-        <div>
-          <hr class="vertical-line" />
-        </div>
 
-        <div class="links" data-aos="fade-right">
-          <a href="https://www.github/Kunal-63">
-            <span class="icon"
-              ><svg
-                viewBox="0 0 200 200"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="svg"
-              >
-                <path
-                  d="M100 0C44.775 0 0 45.4761 0 101.566C0 149.158 32.2667 188.98 75.7667 200C75.3 198.629 75 197.038 75 195.066V177.706C70.9417 177.706 64.1417 177.706 62.4333 177.706C55.5917 177.706 49.5083 174.719 46.5583 169.166C43.2833 162.996 42.7167 153.559 34.6 147.787C32.1917 145.865 34.025 143.673 36.8 143.97C41.925 145.442 46.175 149.014 35.175 154.312C54.1583 159.619 56.0333 160.821 63.475 160.821C67.0833 160.821 72.4833 160.609 77.5667 159.797C80.3 152.747 85.025 146.255 90.8 143.191C57.5 139.712 41.6083 122.886 41.6083 100.042C41.6083 90.2074 45.7333 80.694 52.7417 72.6788C50.4417 64.7228 47.55 48.4977 53.625 42.3191C68.6083 42.3191 77.6667 52.1879 79.8417 54.854C87.3083 52.2556 95.5083 35.7829 104.125 35.7829C112.758 35.7829 120.992 52.2556 128.475 54.8709C130.625 52.2218 139.692 42.3191 154.708 42.3191C160.808 48.5061 157.883 64.799 155.558 72.738C162.525 80.7364 166.625 90.2243 166.625 100.042C166.625 122.869 150.758 139.687 117.508 143.182C126.658 148.032 133.333 161.659 133.333 171.926V195.066C133.333 195.946 133.142 196.581 133.042 197.334C172.008 183.462 200 145.882 200 101.566C200 45.4761 155.225 0 100 0Z"
-                  fill="white"
-                />
-              </svg>
-            </span>
-            Kunal-63
-          </a>
-          <a href="https://www.linkedin.com/in/kunaladwani">
-            <span class="icon"
-              ><svg
-                viewBox="0 0 217 206"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="white"
-                class="svg"
-              >
-                <path
-                  d="M169.26 34.3331H48.5537C46.9979 34.2639 45.443 34.4866 43.9779 34.9887C42.5129 35.4907 41.1666 36.2621 40.016 37.2586C38.8654 38.2552 37.9331 39.4575 37.2726 40.7965C36.6121 42.1356 36.2363 43.5851 36.1667 45.0622V159.907C36.2578 162.998 37.5922 165.94 39.8957 168.126C42.1993 170.313 45.2973 171.58 48.5537 171.667H169.26C172.425 171.533 175.41 170.226 177.574 168.028C179.737 165.83 180.907 162.915 180.833 159.907V45.0622C180.86 43.6245 180.576 42.197 180 40.8671C179.424 39.5373 178.567 38.3332 177.483 37.3285C176.4 36.3239 175.112 35.5401 173.698 35.025C172.284 34.5099 170.774 34.2744 169.26 34.3331ZM81.375 148.835H60.3079V87.6358H81.375V148.835ZM71.3387 78.3656C69.8687 78.4142 68.4038 78.1737 67.0363 77.6592C65.6688 77.1448 64.4281 76.3674 63.3923 75.3759C62.3564 74.3845 61.5476 73.2004 61.0169 71.898C60.486 70.5957 60.2447 69.2032 60.3079 67.8081C60.2429 66.3978 60.4891 64.9903 61.0308 63.6758C61.5725 62.3612 62.3976 61.1686 63.4532 60.1746C64.5089 59.1804 65.7718 58.4068 67.1609 57.9033C68.55 57.3997 70.0347 57.1774 71.5196 57.2506C72.9897 57.202 74.4545 57.4424 75.822 57.9569C77.1895 58.4714 78.4302 59.2488 79.466 60.2402C80.5019 61.2317 81.3107 62.4158 81.8414 63.7181C82.3723 65.0205 82.6136 66.4129 82.5504 67.8081C82.6154 69.2183 82.3692 70.6258 81.8275 71.9403C81.2858 73.255 80.4607 74.4475 79.4051 75.4416C78.3494 76.4357 77.0865 77.2093 75.6975 77.7128C74.3083 78.2164 72.8236 78.4387 71.3387 78.3656ZM156.782 148.835H135.625V115.36C135.625 107.377 132.641 101.884 125.137 101.884C122.806 101.903 120.537 102.606 118.644 103.897C116.75 105.188 115.323 107.003 114.558 109.094C113.97 110.661 113.724 112.326 113.835 113.987V148.835H93.0387V87.6358H113.835V96.2192C115.684 92.9944 118.435 90.3181 121.786 88.4847C125.137 86.6522 128.956 85.7345 132.822 85.8331C146.475 85.8331 156.782 94.4167 156.782 112.699V148.835Z"
-                  fill="white"
-                />
-              </svg>
-            </span>
-            Kunal Adwani
-          </a>
-          <a href="mailto:kunaladwani1456@gmail.com">
-            <span class="icon">
-              <svg
-                viewBox="0 0 200 200"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="svg"
-              >
-                <g clip-path="url(#clip0_8_23)">
-                  <path
-                    d="M100 0C44.7713 0 0 44.7713 0 100C0 155.229 44.7713 200 100 200C155.229 200 200 155.229 200 100C200 44.7713 155.229 0 100 0ZM145.053 55.5556L99.963 91.2019L53.4065 55.5556H145.053ZM149.692 144.444H48.7657V70.6102L95.288 105.897C96.5352 106.851 98.3806 107.328 99.8685 107.328C101.392 107.328 102.714 106.828 103.975 105.831L149.692 69.4648V144.444Z"
-                    fill="white"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_8_23">
-                    <rect width="100" height="100" fill="black" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            kunaladwani1456@gmail.com
-          </a>
-          <a href="https://www.instagram.com/_kunaladwani_">
-            <span class="icon">
-              <img src="./images/instagram.png" height="35" width="35" />
-            </span>
-            _kunaladwani_
-          </a>
-          <a href="https://www.twitter.com/imku63">
-            <img src="./images/twitter.png" height="35" width="35" />
-            imku63
-          </a>
-          <a href="https://www.buymeacoffee.com/kunaladwani">
-            <img src="./images/coffee.png" height="35" width="35" />
-            Buy Me A Coffee
-          </a>
-        </div>
-      </div>
-    </section>
-    
-<script>
-  function myFunction() {
-     document.getElementById("nav-exp").href = "#smallRoadmap";
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 240,
-            duration: 1000
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 10000  // 2 seconds
-        });
-    </script>
-  </body>
+            <ul class="nav__menu" id="navMenu" role="menubar">
+                <li role="none"><a role="menuitem" href="#home" class="nav__link active">Home</a></li>
+                <li role="none"><a role="menuitem" href="#about" class="nav__link">About</a></li>
+                <li role="none"><a role="menuitem" href="#projects" class="nav__link">Projects</a></li>
+                <li role="none"><a role="menuitem" href="#experience" class="nav__link">Experience</a></li>
+                <li role="none"><a role="menuitem" href="#contact" class="nav__link">Contact</a></li>
+                <li role="none">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+                        <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="container hero__grid">
+                <div class="hero__content reveal">
+                    <p class="eyebrow">Hi, I'm</p>
+                    <h1 class="hero__title">John Doe</h1>
+                    <h2 class="hero__subtitle">
+                        <span class="typed" id="typedText" aria-live="polite">Front‑End Developer</span>
+                    </h2>
+                    <p class="hero__tagline">I build modern, accessible, and delightful web experiences.</p>
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="#contact" class="btn btn--accent">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero__media reveal delay-1">
+                    <div class="hero__avatar">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Portrait of John Doe" loading="eager">
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header reveal">
+                    <h3 class="section__title">About Me</h3>
+                    <p class="section__subtitle">A short introduction and key skills</p>
+                </div>
+
+                <div class="about__grid">
+                    <div class="about__image reveal">
+                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=800&auto=format&fit=crop" alt="Working at a desk with laptop">
+                    </div>
+                    <div class="about__content reveal delay-1">
+                        <p>
+                            I'm a passionate front‑end developer focused on crafting clean, user‑centric interfaces with performance and accessibility in mind. I enjoy transforming complex problems into elegant solutions with code.
+                        </p>
+                        <ul class="skills">
+                            <li>HTML5</li>
+                            <li>CSS3 / SCSS</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Accessibility (a11y)</li>
+                            <li>Responsive Design</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                        <div class="about__actions">
+                            <a href="#projects" class="btn btn--primary">See My Work</a>
+                            <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__header reveal">
+                    <h3 class="section__title">Projects</h3>
+                    <p class="section__subtitle">Selected work and experiments</p>
+                </div>
+
+                <div class="projects__grid">
+                    <!-- Project Card 1 -->
+                    <article class="card reveal">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1523475496153-3d6cc0f0f6b1?q=80&w=1200&auto=format&fit=crop" alt="Dashboard analytics UI">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">Analytics Dashboard</h4>
+                            <p class="card__text">Responsive dashboard with charts, theming, and keyboard navigation.</p>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="card reveal delay-1">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="Code editor with website preview">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">Portfolio Template</h4>
+                            <p class="card__text">Modern portfolio template with smooth animations and clean typography.</p>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="card reveal delay-2">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1200&auto=format&fit=crop" alt="Ecommerce product grid UI">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">E‑commerce UI</h4>
+                            <p class="card__text">Product grid, filters, and cart interactions with subtle micro‑animations.</p>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 4 -->
+                    <article class="card reveal">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="API integration illustration">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">API Explorer</h4>
+                            <p class="card__text">Explorer app to visualize REST responses, errors, and latency metrics.</p>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 5 -->
+                    <article class="card reveal delay-1">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1200&auto=format&fit=crop" alt="Mobile app screens">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">Mobile Finance</h4>
+                            <p class="card__text">Concept mobile app focusing on clarity and delightful transitions.</p>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 6 -->
+                    <article class="card reveal delay-2">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Terminal and code">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">CLI Tools</h4>
+                            <p class="card__text">Small productivity CLI tools with robust docs and tests.</p>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <div class="section__header reveal">
+                    <h3 class="section__title">Experience & Education</h3>
+                    <p class="section__subtitle">Timeline of recent milestones</p>
+                </div>
+
+                <div class="experience__grid">
+                    <article class="xp-card reveal">
+                        <div class="xp-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h10v2H4v-2z"/></svg>
+                        </div>
+                        <div class="xp-card__body">
+                            <header class="xp-card__header">
+                                <h4 class="xp-card__title">Front‑End Developer — Acme Inc.</h4>
+                                <span class="xp-card__date">2023 – Present</span>
+                            </header>
+                            <p class="xp-card__desc">Led UI revamp across core product, improved performance by 35%, established a11y guidelines, and shipped design system components.</p>
+                            <ul class="xp-card__tags">
+                                <li>Design System</li>
+                                <li>Accessibility</li>
+                                <li>Performance</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="xp-card reveal delay-1">
+                        <div class="xp-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 5h18v2H3V5zm2 4h14v10H5V9zm2 2v6h10v-6H7z"/></svg>
+                        </div>
+                        <div class="xp-card__body">
+                            <header class="xp-card__header">
+                                <h4 class="xp-card__title">UI Engineer — Studio Pixel</h4>
+                                <span class="xp-card__date">2021 – 2023</span>
+                            </header>
+                            <p class="xp-card__desc">Built interactive landing pages, optimized Core Web Vitals, and mentored junior developers on modern CSS and animations.</p>
+                            <ul class="xp-card__tags">
+                                <li>Animations</li>
+                                <li>Core Web Vitals</li>
+                                <li>Mentorship</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="xp-card reveal delay-2">
+                        <div class="xp-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 3l7 4v4c0 5-3.5 9.74-7 10-3.5-.26-7-5-7-10V7l7-4zM7 9v2h10V9H7z"/></svg>
+                        </div>
+                        <div class="xp-card__body">
+                            <header class="xp-card__header">
+                                <h4 class="xp-card__title">B.Sc. Computer Science — Tech University</h4>
+                                <span class="xp-card__date">2017 – 2021</span>
+                            </header>
+                            <p class="xp-card__desc">Graduated with honors; focused on web technologies, HCI, and software engineering fundamentals.</p>
+                            <ul class="xp-card__tags">
+                                <li>HCI</li>
+                                <li>Web Tech</li>
+                                <li>Honors</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header reveal">
+                    <h3 class="section__title">Contact Me</h3>
+                    <p class="section__subtitle">Let’s build something great together</p>
+                </div>
+
+                <div class="contact__grid">
+                    <div class="contact__card reveal" id="contactCard">
+                        <h4>Let’s connect</h4>
+                        <p class="contact__lead">I’m open to freelance work, collaborations, and full‑time roles. Reach me via email or connect on social.</p>
+                        <div class="contact__actions">
+                            <a class="btn btn--primary" href="mailto:hello@example.com">Email Me</a>
+                            <a class="btn btn--ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                        </div>
+                        <h5 class="contact__sub">Social</h5>
+                        <ul class="socials">
+                            <li>
+                                <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.35-1.79-1.35-1.79-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.79.42-1.32.76-1.62-2.67-.31-5.47-1.33-5.47-5.93 0-1.31.47-2.39 1.24-3.23-.12-.31-.54-1.56.12-3.25 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.69.24 2.94.12 3.25.77.84 1.24 1.92 1.24 3.23 0 4.61-2.8 5.61-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.59c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.69H9.35V9h3.41v1.56h.05c.48-.9 1.66-1.86 3.42-1.86 3.66 0 4.34 2.41 4.34 5.54v6.21zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.55V9H3.56v11.45z"/></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:hello@example.com" aria-label="Email">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6Zm-2 0-8 5-8-5h16Zm0 12H4V8l8 5 8-5v10Z"/></svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="contact__email">Prefer email? <a href="mailto:hello@example.com">hello@example.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+</body>
 </html>
+
+
