@@ -8,15 +8,21 @@
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
 html:focus-within { scroll-behavior: smooth; }
-html, body { height: 100%; }
+html, body { height: 100%; overflow-x: hidden; }
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 img, picture, video, canvas, svg { display: block; max-width: 100%; }
 input, button, textarea, select { font: inherit; }
 p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+
+/* Prevent horizontal overflow */
+* {
+  max-width: 100%;
+}
 
 /* Root Theme */
 :root{
@@ -50,6 +56,8 @@ body{
   font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   cursor: none; /* use custom cursor */
+  width: 100%;
+  max-width: 100vw;
 }
 
 .container{
@@ -106,6 +114,7 @@ body{
   position: relative;
   min-height: calc(100vh - 68px);
   display:flex; align-items:center;
+  overflow: hidden;
 }
 .hero__grid{
   display:grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items:center;
@@ -435,14 +444,14 @@ body{
 
 /* Enhanced hero background accent */
 .hero::after{
-  content:""; position:absolute; right:-10%; top:-10%; width: 520px; height: 520px; border-radius: 50%;
+  content:""; position:absolute; right:-5%; top:-10%; width: 420px; height: 420px; border-radius: 50%;
   background: radial-gradient(closest-side, rgba(37,99,235,0.18), rgba(37,99,235,0.06) 60%, transparent 70%);
   filter: blur(6px); z-index:-1;
 }
 
 /* Extra ambient glow behind hero text */
 .hero::before{
-  content:""; position:absolute; left:-20%; bottom:-10%; width: 420px; height: 420px; border-radius:50%;
+  content:""; position:absolute; left:-10%; bottom:-10%; width: 320px; height: 320px; border-radius:50%;
   background: radial-gradient(closest-side, rgba(250,204,21,0.18), rgba(250,204,21,0.06) 60%, transparent 70%);
   filter: blur(8px); z-index:-1;
 }
