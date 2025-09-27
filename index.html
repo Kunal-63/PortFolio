@@ -31,7 +31,7 @@
             <ul class="nav__menu" id="navMenu" role="menubar">
                 <li role="none"><a role="menuitem" href="#home" class="nav__link active">Home</a></li>
                 <li role="none"><a role="menuitem" href="#about" class="nav__link">About</a></li>
-                <li role="none"><a role="menuitem" href="#projects" class="nav__link">Projects</a></li>
+                <li role="none"><a role="menuitem" href="projects.html" class="nav__link">Projects</a></li>
                 <li role="none"><a role="menuitem" href="#experience" class="nav__link">Experience</a></li>
                 <li role="none"><a role="menuitem" href="#contact" class="nav__link">Contact</a></li>
                 <li role="none">
@@ -49,19 +49,19 @@
             <div class="container hero__grid">
                 <div class="hero__content reveal">
                     <p class="eyebrow">Hi, I'm</p>
-                    <h1 class="hero__title">John Doe</h1>
+                    <h1 class="hero__title">Kunal Adwani</h1>
                     <h2 class="hero__subtitle">
-                        <span class="typed" id="typedText" aria-live="polite">Front‑End Developer</span>
+                        <span class="typed" id="typedText" aria-live="polite">Full Stack Developer</span>
                     </h2>
-                    <p class="hero__tagline">I build modern, accessible, and delightful web experiences.</p>
+                    <p class="hero__tagline">Crafting digital experiences with code and creativity.</p>
                     <div class="hero__cta">
-                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="projects.html" class="btn btn--primary">View Projects</a>
                         <a href="#contact" class="btn btn--accent">Contact Me</a>
                     </div>
                 </div>
                 <div class="hero__media reveal delay-1">
                     <div class="hero__avatar">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Portrait of John Doe" loading="eager">
+                        <img src="./assets/pfp.jpg" alt="Portrait of Kunal Adwani" loading="eager">
                     </div>
                 </div>
             </div>
@@ -80,19 +80,40 @@
 
                 <div class="about__grid">
                     <div class="about__image reveal">
-                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=800&auto=format&fit=crop" alt="Working at a desk with laptop">
+                        <img src="./assets/about.jpg" alt="About Me">
                     </div>
                     <div class="about__content reveal delay-1">
                         <p>
-                            I'm a passionate front‑end developer focused on crafting clean, user‑centric interfaces with performance and accessibility in mind. I enjoy transforming complex problems into elegant solutions with code.
+                            I'm a passionate full stack developer focused on crafting clean, user‑centric interfaces with performance and accessibility in mind. I enjoy transforming complex problems into elegant solutions with code.
                         </p>
                         <ul class="skills">
-                            <li>HTML5</li>
-                            <li>CSS3 / SCSS</li>
-                            <li>JavaScript (ES6+)</li>
-                            <li>Accessibility (a11y)</li>
-                            <li>Responsive Design</li>
-                            <li>Performance Optimization</li>
+                            <ul class="skills__list skills__list--frontend">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                            </ul>
+                            <ul class="skills__list skills__list--frameworks">
+                                <li>Flutter</li>
+                                <li>FastAPI</li>
+                                <li>Django</li>
+                                <li>Flask</li>
+                            </ul>
+                            <ul class="skills__list skills__list--tools">
+                                <li>AWS</li>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>GitLab</li>
+                            </ul>
+                            <ul class="skills__list skills__list--databases">
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                                <li>SQLite</li>
+                                <li>Firebase</li>
+                                <li>DynamoDB</li>
+                            </ul>
                         </ul>
                         <div class="about__actions">
                             <a href="#projects" class="btn btn--primary">See My Work</a>
@@ -108,21 +129,29 @@
             <div class="container">
                 <div class="section__header reveal">
                     <h3 class="section__title">Projects</h3>
-                    <p class="section__subtitle">Selected work and experiments</p>
+                    <p class="section__subtitle">Some of my projects</p>
                 </div>
 
                 <div class="projects__grid">
                     <!-- Project Card 1 -->
                     <article class="card reveal">
                         <div class="card__media">
-                            <img src="https://images.unsplash.com/photo-1523475496153-3d6cc0f0f6b1?q=80&w=1200&auto=format&fit=crop" alt="Dashboard analytics UI">
+                            <img src="./projects/price-scrapper.png" alt="Image of Price Scrapper Project">
                         </div>
                         <div class="card__body">
-                            <h4 class="card__title">Analytics Dashboard</h4>
-                            <p class="card__text">Responsive dashboard with charts, theming, and keyboard navigation.</p>
+                            <h4 class="card__title">AI Price Scrapper</h4>
+                            <p class="card__text">Price scrapper using Python and Selenium to scrape prices for a products from multiple e-commerce websites.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--backend">Python</span>
+                                <span class="tech-tag tech-tag--tools">Scrapfly</span>
+                                <span class="tech-tag tech-tag--tools">AWS</span>
+                                <span class="tech-tag tech-tag--tools">Git</span>
+                                <span class="tech-tag tech-tag--tools">GitHub</span>
+                                <span class="tech-tag tech-tag--databases">DynamoDB</span>
+
+                            </div>
                             <div class="card__actions">
-                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
-                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                                <a href="https://github.com/Auricore/Price-Scrapper" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
                             </div>
                         </div>
                     </article>
@@ -130,11 +159,19 @@
                     <!-- Project Card 2 -->
                     <article class="card reveal delay-1">
                         <div class="card__media">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="Code editor with website preview">
+                            <img src="./projects/saral-transport.png" alt="Code editor with website preview">
                         </div>
                         <div class="card__body">
-                            <h4 class="card__title">Portfolio Template</h4>
-                            <p class="card__text">Modern portfolio template with smooth animations and clean typography.</p>
+                            <h4 class="card__title">SARAL Transport</h4>
+                            <p class="card__text">A software for managing transport and logistics for a company using FastAPI and MySQL.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--backend">Python</span>
+                                <span class="tech-tag tech-tag--backend">FastAPI</span>
+                                <span class="tech-tag tech-tag--tools">AWS</span>
+                                <span class="tech-tag tech-tag--tools">Git</span>
+                                <span class="tech-tag tech-tag--tools">GitHub</span>
+                                <span class="tech-tag tech-tag--databases">MySQL</span>
+                            </div>
                             <div class="card__actions">
                                 <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
                                 <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
@@ -150,6 +187,12 @@
                         <div class="card__body">
                             <h4 class="card__title">E‑commerce UI</h4>
                             <p class="card__text">Product grid, filters, and cart interactions with subtle micro‑animations.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--frontend">React</span>
+                                <span class="tech-tag tech-tag--frontend">CSS3</span>
+                                <span class="tech-tag tech-tag--frontend">JavaScript</span>
+                                <span class="tech-tag tech-tag--tools">Node.js</span>
+                            </div>
                             <div class="card__actions">
                                 <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
                                 <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
@@ -165,6 +208,12 @@
                         <div class="card__body">
                             <h4 class="card__title">API Explorer</h4>
                             <p class="card__text">Explorer app to visualize REST responses, errors, and latency metrics.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--backend">FastAPI</span>
+                                <span class="tech-tag tech-tag--frontend">React</span>
+                                <span class="tech-tag tech-tag--tools">Docker</span>
+                                <span class="tech-tag tech-tag--databases">PostgreSQL</span>
+                            </div>
                             <div class="card__actions">
                                 <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
                                 <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
@@ -180,6 +229,12 @@
                         <div class="card__body">
                             <h4 class="card__title">Mobile Finance</h4>
                             <p class="card__text">Concept mobile app focusing on clarity and delightful transitions.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--mobile">Flutter</span>
+                                <span class="tech-tag tech-tag--mobile">Dart</span>
+                                <span class="tech-tag tech-tag--databases">Firebase</span>
+                                <span class="tech-tag tech-tag--tools">GitHub</span>
+                            </div>
                             <div class="card__actions">
                                 <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
                                 <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
@@ -195,12 +250,21 @@
                         <div class="card__body">
                             <h4 class="card__title">CLI Tools</h4>
                             <p class="card__text">Small productivity CLI tools with robust docs and tests.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--backend">Python</span>
+                                <span class="tech-tag tech-tag--backend">Click</span>
+                                <span class="tech-tag tech-tag--tools">Docker</span>
+                                <span class="tech-tag tech-tag--tools">GitHub Actions</span>
+                            </div>
                             <div class="card__actions">
                                 <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
                                 <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
                             </div>
                         </div>
                     </article>
+                </div>
+                <div class="projects__cta reveal">
+                    <a href="projects.html" class="btn btn--primary">See More Projects</a>
                 </div>
             </div>
         </section>
@@ -214,41 +278,57 @@
                 </div>
 
                 <div class="experience__grid">
-                    <article class="xp-card reveal">
-                        <div class="xp-card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h10v2H4v-2z"/></svg>
-                        </div>
-                        <div class="xp-card__body">
-                            <header class="xp-card__header">
-                                <h4 class="xp-card__title">Front‑End Developer — Acme Inc.</h4>
-                                <span class="xp-card__date">2023 – Present</span>
-                            </header>
-                            <p class="xp-card__desc">Led UI revamp across core product, improved performance by 35%, established a11y guidelines, and shipped design system components.</p>
-                            <ul class="xp-card__tags">
-                                <li>Design System</li>
-                                <li>Accessibility</li>
-                                <li>Performance</li>
-                            </ul>
-                        </div>
-                    </article>
-
                     <article class="xp-card reveal delay-1">
                         <div class="xp-card__icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 5h18v2H3V5zm2 4h14v10H5V9zm2 2v6h10v-6H7z"/></svg>
                         </div>
                         <div class="xp-card__body">
                             <header class="xp-card__header">
-                                <h4 class="xp-card__title">UI Engineer — Studio Pixel</h4>
-                                <span class="xp-card__date">2021 – 2023</span>
+                                <h4 class="xp-card__title">AI Engineer — Freelancer</h4>
+                                <span class="xp-card__date">Jun '25 – Present</span>
                             </header>
-                            <p class="xp-card__desc">Built interactive landing pages, optimized Core Web Vitals, and mentored junior developers on modern CSS and animations.</p>
+                            <p class="xp-card__desc">Worked on multiple porjects using AI models and APIs. </p>
                             <ul class="xp-card__tags">
-                                <li>Animations</li>
-                                <li>Core Web Vitals</li>
-                                <li>Mentorship</li>
+                                <li>Fine-tuning</li>
+                                <li>CI/CD</li>
+                                <li>Data Pipeline</li>
+                                <li>AI API</li>
+                                <li>RAG</li>
+                                <li>LangChain</li>
+                                <li>OpenAI</li>
+                                <li>Gemini</li>
+                                <li>Anthropic</li>
+                                <li>Azure</li>
+                                <li>AWS</li>
+                                <li>GCP</li>
                             </ul>
                         </div>
                     </article>
+
+                    <article class="xp-card reveal">
+                        <div class="xp-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h10v2H4v-2z"/></svg>
+                        </div>
+                        <div class="xp-card__body">
+                            <header class="xp-card__header">
+                                <h4 class="xp-card__title">Full Stack Developer — NexNodez</h4>
+                                <span class="xp-card__date">Apr '23 – Jul '25</span>
+                            </header>
+                            <p class="xp-card__desc">Worked on multiple projects for the company including mobile apps and web apps using Flutter, FastAPI, Django, Flask, and other technologies.</p>
+                            <ul class="xp-card__tags">
+                                <li>Flutter</li>
+                                <li>FastAPI</li>
+                                <li>Django</li>
+                                <li>Flask</li>
+                                <li>AWS</li>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>GitLab</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    
 
                     <article class="xp-card reveal delay-2">
                         <div class="xp-card__icon" aria-hidden="true">
@@ -256,14 +336,18 @@
                         </div>
                         <div class="xp-card__body">
                             <header class="xp-card__header">
-                                <h4 class="xp-card__title">B.Sc. Computer Science — Tech University</h4>
-                                <span class="xp-card__date">2017 – 2021</span>
+                                <h4 class="xp-card__title">B.Sc. Computer Science — St. Xavier's College, Ahmedabad</h4>
+                                <span class="xp-card__date">2023 – 2026</span>
                             </header>
-                            <p class="xp-card__desc">Graduated with honors; focused on web technologies, HCI, and software engineering fundamentals.</p>
+                            <p class="xp-card__desc">Pursuing B.Sc. Computer Science from St. Xavier's College, Ahmedabad. I am currently in my 3rd year of study.</p>
                             <ul class="xp-card__tags">
-                                <li>HCI</li>
-                                <li>Web Tech</li>
-                                <li>Honors</li>
+                                <li>Computer Science</li>
+       
+                                <li>Software Engineering</li>
+                                <li>Data Structures</li>
+                                <li>Algorithms</li>
+                                <li>Operating Systems</li>
+                                <li>Database Management Systems</li>
                             </ul>
                         </div>
                     </article>
@@ -290,22 +374,22 @@
                         <h5 class="contact__sub">Social</h5>
                         <ul class="socials">
                             <li>
-                                <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+                                <a href="https://github.com/Kunal-63/" target="_blank" rel="noopener" aria-label="GitHub">
                                     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.35-1.79-1.35-1.79-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.79.42-1.32.76-1.62-2.67-.31-5.47-1.33-5.47-5.93 0-1.31.47-2.39 1.24-3.23-.12-.31-.54-1.56.12-3.25 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.69.24 2.94.12 3.25.77.84 1.24 1.92 1.24 3.23 0 4.61-2.8 5.61-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <a href="https://www.linkedin.com/in/kunaladwani/" target="_blank" rel="noopener" aria-label="LinkedIn">
                                     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.59c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.69H9.35V9h3.41v1.56h.05c.48-.9 1.66-1.86 3.42-1.86 3.66 0 4.34 2.41 4.34 5.54v6.21zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.55V9H3.56v11.45z"/></svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:hello@example.com" aria-label="Email">
+                                <a href="mailto:kunaladwani.work@gmail.com" aria-label="Email">
                                     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6Zm-2 0-8 5-8-5h16Zm0 12H4V8l8 5 8-5v10Z"/></svg>
                                 </a>
                             </li>
                         </ul>
-                        <p class="contact__email">Prefer email? <a href="mailto:hello@example.com">hello@example.com</a></p>
+                        <p class="contact__email">Prefer email? <a href="mailto:kunaladwani.work@gmail.com">kunaladwani.work@gmail.com</a></p>
                     </div>
                 </div>
             </div>

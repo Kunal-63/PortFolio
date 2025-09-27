@@ -1,0 +1,288 @@
+/*
+  Projects Page Styles
+  Additional styles for the projects.html page
+*/
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--primary), #1D4ED8);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(30px, -30px) rotate(120deg); }
+    66% { transform: translate(-20px, 20px) rotate(240deg); }
+}
+
+.page-header__content {
+    position: relative;
+    z-index: 1;
+}
+
+.page-header__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.page-header__subtitle {
+    font-size: clamp(16px, 2.5vw, 20px);
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Project Categories */
+.project-category {
+    position: relative;
+}
+
+.project-category:nth-child(even) {
+    background: rgba(37, 99, 236, 0.02);
+}
+
+/* Tech Tags */
+.card__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.tech-tag {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+/* Backend Tech Tags */
+.tech-tag--backend {
+    background: linear-gradient(135deg, #0F766E, #0D9488);
+    color: white;
+    box-shadow: 0 2px 8px rgba(15, 118, 110, 0.3);
+    border: 1px solid rgba(20, 184, 166, 0.3);
+}
+
+.tech-tag--backend:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15, 118, 110, 0.4);
+    border-color: rgba(20, 184, 166, 0.5);
+}
+
+/* Frontend Tech Tags */
+.tech-tag--frontend {
+    background: linear-gradient(135deg, #1E40AF, #1E3A8A);
+    color: white;
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.3);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.tech-tag--frontend:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.4);
+    border-color: rgba(59, 130, 246, 0.5);
+}
+
+/* Mobile Tech Tags */
+.tech-tag--mobile {
+    background: linear-gradient(135deg, #059669, #047857);
+    color: white;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.3);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.tech-tag--mobile:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.4);
+    border-color: rgba(16, 185, 129, 0.5);
+}
+
+/* DevOps Tech Tags */
+.tech-tag--devops {
+    background: linear-gradient(135deg, #DC2626, #B91C1C);
+    color: white;
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.3);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.tech-tag--devops:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+    border-color: rgba(239, 68, 68, 0.5);
+}
+
+/* Enhanced Card Styling for Projects Page */
+.projects__grid .card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(17,24,39,0.08);
+}
+
+.projects__grid .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(17,24,39,0.15);
+    border-color: rgba(37, 99, 236, 0.2);
+}
+
+.projects__grid .card__media {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects__grid .card__media::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.projects__grid .card:hover .card__media::after {
+    transform: translateX(100%);
+}
+
+/* Category Section Headers */
+.project-category .section__title {
+    position: relative;
+    display: inline-block;
+}
+
+.project-category .section__title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 2px;
+}
+
+/* Dark Theme Adjustments */
+.theme-dark .project-category:nth-child(even) {
+    background: rgba(37, 99, 236, 0.05);
+}
+
+.theme-dark .projects__grid .card {
+    border-color: rgba(255,255,255,0.1);
+}
+
+.theme-dark .projects__grid .card:hover {
+    border-color: rgba(37, 99, 236, 0.3);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .projects__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-header__title {
+        font-size: 28px;
+    }
+    
+    .page-header__subtitle {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__tech {
+        gap: 6px;
+    }
+    
+    .tech-tag {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+    
+    .card__actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .card__actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Scroll animations for project categories */
+.project-category {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.project-category.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 236, 0.4);
+}
+
+.back-to-top svg {
+    width: 20px;
+    height: 20px;
+}

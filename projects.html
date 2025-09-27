@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projects - My Portfolio</title>
+    <meta name="description" content="Explore my diverse portfolio of projects across backend development, frontend development, and more.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💠</text></svg>">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo" aria-label="Go to home">MyPortfolio</a>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav__menu" id="navMenu" role="menubar">
+                <li role="none"><a role="menuitem" href="index.html" class="nav__link">Home</a></li>
+                <li role="none"><a role="menuitem" href="index.html#about" class="nav__link">About</a></li>
+                <li role="none"><a role="menuitem" href="projects.html" class="nav__link active">Projects</a></li>
+                <li role="none"><a role="menuitem" href="index.html#experience" class="nav__link">Experience</a></li>
+                <li role="none"><a role="menuitem" href="index.html#contact" class="nav__link">Contact</a></li>
+                <li role="none">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+                        <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header section">
+            <div class="container">
+                <div class="page-header__content reveal">
+                    <h1 class="page-header__title">My Projects</h1>
+                    <p class="page-header__subtitle">A comprehensive showcase of my work across different domains</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Backend Development Section -->
+        <section class="project-category section" id="backend">
+            <div class="container">
+                <div class="section__header reveal">
+                    <h2 class="section__title">Backend Development</h2>
+                    <p class="section__subtitle">Server-side applications and APIs</p>
+                </div>
+
+                <div class="projects__grid">
+                    <article class="card reveal">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="REST API Documentation">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">E-commerce REST API</h3>
+                            <p class="card__text">Scalable REST API built with FastAPI featuring user authentication, product management, and payment integration.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--backend">FastAPI</span>
+                                <span class="tech-tag tech-tag--backend">PostgreSQL</span>
+                                <span class="tech-tag tech-tag--backend">Redis</span>
+                                <span class="tech-tag tech-tag--backend">Docker</span>
+                            </div>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card reveal delay-1">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?q=80&w=1200&auto=format&fit=crop" alt="Microservices Architecture">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Microservices Platform</h3>
+                            <p class="card__text">Distributed system with multiple microservices, message queues, and container orchestration.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--backend">Django</span>
+                                <span class="tech-tag tech-tag--backend">RabbitMQ</span>
+                                <span class="tech-tag tech-tag--backend">Kubernetes</span>
+                                <span class="tech-tag tech-tag--backend">AWS</span>
+                            </div>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card reveal delay-2">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop" alt="Database Schema">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Real-time Analytics API</h3>
+                            <p class="card__text">High-performance API for real-time data processing and analytics with WebSocket support.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--backend">Node.js</span>
+                                <span class="tech-tag tech-tag--backend">MongoDB</span>
+                                <span class="tech-tag tech-tag--backend">WebSocket</span>
+                                <span class="tech-tag tech-tag--backend">Redis</span>
+                            </div>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Frontend Development Section -->
+        <section class="project-category section" id="frontend">
+            <div class="container">
+                <div class="section__header reveal">
+                    <h2 class="section__title">Frontend Development</h2>
+                    <p class="section__subtitle">User interfaces and interactive experiences</p>
+                </div>
+
+                <div class="projects__grid">
+                    <article class="card reveal">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1523475496153-3d6cc0f0f6b1?q=80&w=1200&auto=format&fit=crop" alt="Dashboard Analytics UI">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Analytics Dashboard</h3>
+                            <p class="card__text">Responsive dashboard with interactive charts, real-time data visualization, and customizable widgets.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--frontend">React</span>
+                                <span class="tech-tag tech-tag--frontend">TypeScript</span>
+                                <span class="tech-tag tech-tag--frontend">D3.js</span>
+                                <span class="tech-tag tech-tag--frontend">Tailwind CSS</span>
+                            </div>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card reveal delay-1">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1200&auto=format&fit=crop" alt="Ecommerce UI">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">E-commerce Store</h3>
+                            <p class="card__text">Modern e-commerce platform with shopping cart, payment integration, and user management.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--frontend">Vue.js</span>
+                                <span class="tech-tag tech-tag--frontend">Nuxt.js</span>
+                                <span class="tech-tag tech-tag--frontend">Stripe API</span>
+                                <span class="tech-tag tech-tag--frontend">SCSS</span>
+                            </div>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card reveal delay-2">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop" alt="Mobile App UI">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Task Management App</h3>
+                            <p class="card__text">Progressive Web App for task management with offline support and real-time collaboration.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--frontend">React</span>
+                                <span class="tech-tag tech-tag--frontend">PWA</span>
+                                <span class="tech-tag tech-tag--frontend">IndexedDB</span>
+                                <span class="tech-tag tech-tag--frontend">Material-UI</span>
+                            </div>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Development Section -->
+        <section class="project-category section" id="mobile">
+            <div class="container">
+                <div class="section__header reveal">
+                    <h2 class="section__title">Mobile Development</h2>
+                    <p class="section__subtitle">Cross-platform mobile applications</p>
+                </div>
+
+                <div class="projects__grid">
+                    <article class="card reveal">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1200&auto=format&fit=crop" alt="Mobile Finance App">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Finance Tracker</h3>
+                            <p class="card__text">Cross-platform mobile app for expense tracking with budget management and financial insights.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--mobile">Flutter</span>
+                                <span class="tech-tag tech-tag--mobile">Dart</span>
+                                <span class="tech-tag tech-tag--mobile">Firebase</span>
+                                <span class="tech-tag tech-tag--mobile">SQLite</span>
+                            </div>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Play Store</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card reveal delay-1">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="Social Media App">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Social Media App</h3>
+                            <p class="card__text">Feature-rich social media application with real-time messaging and media sharing capabilities.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--mobile">React Native</span>
+                                <span class="tech-tag tech-tag--mobile">Expo</span>
+                                <span class="tech-tag tech-tag--mobile">Socket.io</span>
+                                <span class="tech-tag tech-tag--mobile">AWS S3</span>
+                            </div>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">App Store</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DevOps & Tools Section -->
+        <section class="project-category section" id="devops">
+            <div class="container">
+                <div class="section__header reveal">
+                    <h2 class="section__title">DevOps & Tools</h2>
+                    <p class="section__subtitle">Infrastructure and automation projects</p>
+                </div>
+
+                <div class="projects__grid">
+                    <article class="card reveal">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="DevOps Pipeline">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">CI/CD Pipeline</h3>
+                            <p class="card__text">Automated deployment pipeline with Docker, Kubernetes, and comprehensive testing workflows.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--devops">Docker</span>
+                                <span class="tech-tag tech-tag--devops">Kubernetes</span>
+                                <span class="tech-tag tech-tag--devops">GitHub Actions</span>
+                                <span class="tech-tag tech-tag--devops">AWS</span>
+                            </div>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Documentation</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card reveal delay-1">
+                        <div class="card__media">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop" alt="Monitoring Dashboard">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Infrastructure Monitoring</h3>
+                            <p class="card__text">Comprehensive monitoring solution with custom dashboards and automated alerting system.</p>
+                            <div class="card__tech">
+                                <span class="tech-tag tech-tag--devops">Prometheus</span>
+                                <span class="tech-tag tech-tag--devops">Grafana</span>
+                                <span class="tech-tag tech-tag--devops">Python</span>
+                                <span class="tech-tag tech-tag--devops">Terraform</span>
+                            </div>
+                            <div class="card__actions">
+                                <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </a>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>

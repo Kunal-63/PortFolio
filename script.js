@@ -86,7 +86,7 @@
   // Simple typed text effect in hero
   const typedEl = document.getElementById('typedText');
   if (typedEl){
-    const phrases = ['Front‑End Developer', 'UI Engineer', 'Web Animator'];
+    const phrases = ['Full Stack Developer', 'Mobile App Developer', 'AI Engineer'];
     let idx = 0, char = 0, deleting = false;
     function tick(){
       const current = phrases[idx];
