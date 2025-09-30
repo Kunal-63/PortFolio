@@ -6,6 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Portfolio</title>
     <meta name="description" content="Personal portfolio showcasing projects, experience, and contact information.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Kunal Adwani">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://kunaladwani.vercel.app/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kunal Adwani — Portfolio">
+    <meta property="og:title" content="Kunal Adwani — Portfolio">
+    <meta property="og:description" content="Personal portfolio showcasing projects, experience, and contact information.">
+    <meta property="og:url" content="https://kunaladwani.vercel.app/">
+    <meta property="og:image" content="https://kunaladwani.vercel.app/assets/pfp.jpg">
+    <meta property="og:image:alt" content="Portrait of Kunal Adwani">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kunal Adwani — Portfolio">
+    <meta name="twitter:description" content="Personal portfolio showcasing projects, experience, and contact information.">
+    <meta name="twitter:image" content="https://kunaladwani.vercel.app/assets/pfp.jpg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +33,25 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💠</text></svg>">
+    <link rel="icon" href="./assets/pfp.jpg?v=3" type="image/jpeg">
+    <link rel="apple-touch-icon" href="./assets/pfp.jpg?v=3">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kunal Adwani",
+      "url": "https://kunaladwani.vercel.app/",
+      "image": "https://kunaladwani.vercel.app/assets/pfp.jpg",
+      "jobTitle": "Full Stack Developer",
+      "description": "Personal portfolio showcasing projects, experience, and contact information.",
+      "email": "mailto:kunaladwani.work@gmail.com",
+      "sameAs": [
+        "https://github.com/Kunal-63",
+        "https://www.linkedin.com/in/kunaladwani/"
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header / Navbar -->
@@ -228,13 +265,15 @@
                             <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1200&auto=format&fit=crop" alt="Mobile app screens">
                         </div>
                         <div class="card__body">
-                            <h4 class="card__title">Mobile Finance</h4>
+                            <h4 class="card__title">CI/CD Pipeline</h4>
                             <p class="card__text">Concept mobile app focusing on clarity and delightful transitions.</p>
                             <div class="card__tech">
-                                <span class="tech-tag tech-tag--mobile">Flutter</span>
-                                <span class="tech-tag tech-tag--mobile">Dart</span>
-                                <span class="tech-tag tech-tag--databases">Firebase</span>
+                                <span class="tech-tag tech-tag--backend">Docker</span>
+                                <span class="tech-tag tech-tag--backend">Kubernetes</span>
+                                <span class="tech-tag tech-tag--backend">GitHub Actions</span>
+                                <span class="tech-tag tech-tag--backend">AWS</span>
                                 <span class="tech-tag tech-tag--tools">GitHub</span>
+                                
                             </div>
                             <div class="card__actions">
                                 <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
@@ -369,8 +408,8 @@
                         <h4>Let’s connect</h4>
                         <p class="contact__lead">I’m open to freelance work, collaborations, and full‑time roles. Reach me via email or connect on social.</p>
                         <div class="contact__actions">
-                            <a class="btn btn--primary" href="mailto:hello@example.com">Email Me</a>
-                            <a class="btn btn--ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                            <a class="btn btn--primary" href="mailto:kunaladwani.work@gmail.com">Email Me</a>
+                            <a class="btn btn--ghost" href="https://www.linkedin.com/in/kunaladwani/" target="_blank" rel="noopener">LinkedIn</a>
                         </div>
                         <h5 class="contact__sub">Social</h5>
                         <ul class="socials">
