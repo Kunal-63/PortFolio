@@ -7,8 +7,8 @@
 /* CSS Reset (modern minimal) */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
-html:focus-within { scroll-behavior: smooth; }
-html, body { height: 100%; overflow-x: hidden; }
+html, body { scroll-behavior: smooth; }
+html, body { overflow-x: hidden; }
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -83,7 +83,11 @@ body{
 
 /* Header / Nav */
 .header{
-  position: sticky; top: 0; inset-inline: 0; z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
   background: color-mix(in srgb, var(--bg) 92%, transparent);
   backdrop-filter: saturate(180%) blur(10px);
   border-bottom: 1px solid rgba(17,24,39,0.06);

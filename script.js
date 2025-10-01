@@ -1,5 +1,5 @@
 // Smooth-scroll offset adjustment and active link highlighting
-(function(){
+document.addEventListener('DOMContentLoaded', function() {
   const header = document.getElementById('header');
   const links = document.querySelectorAll('.nav__link');
   const navMenu = document.getElementById('navMenu');
@@ -8,6 +8,11 @@
   const yearEl = document.getElementById('year');
   const cursor = document.getElementById('cursor');
   const themeToggle = document.getElementById('themeToggle');
+
+  console.log('header:', header);
+  console.log('links:', links);
+  console.log('navMenu:', navMenu);
+  console.log('navToggle:', navToggle);
 
   // Year in footer
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -28,24 +33,43 @@
     });
   }
 
-  // Smooth scrolling for internal anchors with header offset
+  // Smooth scrolling with header offset
   function scrollWithOffset(hash){
     const el = document.querySelector(hash);
-    if (!el) return;
-    const rect = el.getBoundingClientRect();
-    const offset = (header?.offsetHeight || 0) + 8;
-    const y = rect.top + window.pageYOffset - offset;
+    console.log('Trying to scroll to:', hash, 'Element:', el);
+    if (!el) {
+      console.warn("No section found for:", hash);
+      return;
+    }
+    const headerHeight = header ? header.offsetHeight : 0;
+    console.log('Header height:', headerHeight);
+    // Reduce offset to -2 for better alignment, and fallback if headerHeight is 0
+    const y = el.getBoundingClientRect().top + window.scrollY - (headerHeight > 0 ? headerHeight - 2 : 0);
+    console.log('Scrolling to Y:', y);
     window.scrollTo({ top: y, behavior: 'smooth' });
   }
 
-  document.addEventListener('click', (e) => {
-    const a = e.target instanceof Element ? e.target.closest('a[href^="#"]') : null;
-    if (!a) return;
-    const href = a.getAttribute('href');
-    if (!href || href === '#' || href.length < 2) return;
-    e.preventDefault();
-    scrollWithOffset(href);
-    history.pushState(null, '', href);
+  // Handle nav link clicks
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      console.log('Nav link clicked:', href);
+      if (!href || !href.startsWith('#')) return;
+
+      const target = document.querySelector(href);
+      console.log('Target for href:', href, 'is', target);
+      if (!target) {
+        console.warn("No section for", href);
+        return;
+      }
+
+      e.preventDefault();
+      scrollWithOffset(href);
+
+      // Update active immediately
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
   });
 
   // Intersection Observer for on-scroll reveal
@@ -67,10 +91,14 @@
     entries.forEach(entry => {
       if (entry.isIntersecting){
         const id = entry.target.getAttribute('id');
-        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === `#${id}`));
+        if (!id) return;
+        links.forEach(l =>
+          l.classList.toggle('active', l.getAttribute('href') === `#${id}`)
+        );
       }
     });
-  }, { threshold: 0.6 });
+  }, { threshold: 0.5, rootMargin: '-50px 0px -40% 0px' });
+
   sections.forEach(s => sectionObserver.observe(s));
 
   // Back to top visibility
@@ -103,9 +131,6 @@
     }
     setTimeout(tick, 600);
   }
-
-  // Contact form validation + mailto fallback
-  // Contact form was removed; no JS needed here
 
   // Theme: load preference & toggle
   const applyTheme = (theme) => {
@@ -151,6 +176,4 @@
       el.addEventListener('mouseleave', () => cursor.classList.remove('is-hover'));
     });
   }
-})();
-
-
+});
